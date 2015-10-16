@@ -25,6 +25,7 @@
 		3E6148D21BD16E3A00291F0E /* spain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E6148C71BD16E3A00291F0E /* spain.jpg */; settings = {ASSET_TAGS = (); }; };
 		3E6148D31BD16E3A00291F0E /* turkey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E6148C81BD16E3A00291F0E /* turkey.jpg */; settings = {ASSET_TAGS = (); }; };
 		3E6148D41BD16E3A00291F0E /* ukraine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E6148C91BD16E3A00291F0E /* ukraine.jpg */; settings = {ASSET_TAGS = (); }; };
+		3E6148D71BD18DA800291F0E /* SPDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6148D61BD18DA800291F0E /* SPDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,8 @@
 		3E6148C71BD16E3A00291F0E /* spain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spain.jpg; sourceTree = "<group>"; };
 		3E6148C81BD16E3A00291F0E /* turkey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turkey.jpg; sourceTree = "<group>"; };
 		3E6148C91BD16E3A00291F0E /* ukraine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ukraine.jpg; sourceTree = "<group>"; };
+		3E6148D51BD18DA800291F0E /* SPDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPDetailViewController.h; path = SPControllers/SPDetailViewController/SPDetailViewController.h; sourceTree = "<group>"; };
+		3E6148D61BD18DA800291F0E /* SPDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPDetailViewController.m; path = SPControllers/SPDetailViewController/SPDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,7 @@
 		3E6148B11BD15A2000291F0E /* SPControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3E6148D81BD18DBE00291F0E /* SPDetailViewController */,
 				3E6148BD1BD16B3400291F0E /* SPTableViewCellController */,
 				3E6148B91BD16A2700291F0E /* SPUITableViewController */,
 			);
@@ -171,6 +175,15 @@
 				3E6148C91BD16E3A00291F0E /* ukraine.jpg */,
 			);
 			path = flags;
+			sourceTree = "<group>";
+		};
+		3E6148D81BD18DBE00291F0E /* SPDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E6148D51BD18DA800291F0E /* SPDetailViewController.h */,
+				3E6148D61BD18DA800291F0E /* SPDetailViewController.m */,
+			);
+			name = SPDetailViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6148D71BD18DA800291F0E /* SPDetailViewController.m in Sources */,
 				3E6148B81BD16A0900291F0E /* SPTableViewController.m in Sources */,
 				3E61489F1BD1596200291F0E /* AppDelegate.m in Sources */,
 				3E61489C1BD1596200291F0E /* main.m in Sources */,

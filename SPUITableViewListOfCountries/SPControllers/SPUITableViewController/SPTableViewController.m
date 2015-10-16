@@ -8,6 +8,7 @@
 
 #import "SPTableViewController.h"
 #import "SPTableViewCell.h"
+#import "SPDetailViewController.h"
 
 @interface SPTableViewController ()
 
@@ -53,7 +54,7 @@
                           @"Великобританія",
                           @"Греція",
                           @"Італія",
-                          @"Котолівство Нідерландів",
+                          @"Королівство Нідерландів",
                           @"Польща",
                           @"Румунія",
                           @"Іспанія",
@@ -138,14 +139,20 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+    if ([[segue identifier] isEqualToString:@"ShowDetails"]) {
+        SPDetailViewController *detailView = [segue destinationViewController];
+        
+        NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
+        int row = (int)[myIndexPath row];
+        
+        detailView.DetailModal = @[ImageFlag[row],EnCountryName[row],UaCounrtyName[row],UaCapitalName[row]];
+    }
+    
 }
-*/
 
 @end
