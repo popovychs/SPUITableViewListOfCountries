@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface SPTableViewController : UITableViewController
+{
+NSArray *ImageFlag;
+NSArray *EnCountryName;
+NSArray *UaCounrtyName;
+NSArray *UaCapitalName;
+}
 
 @end

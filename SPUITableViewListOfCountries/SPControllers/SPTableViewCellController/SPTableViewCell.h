@@ -10,4 +10,10 @@
 
 @interface SPTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *CellImageFlag;
+@property (weak, nonatomic) IBOutlet UILabel *CellEnCountryName;
+@property (weak, nonatomic) IBOutlet UILabel *CellUaCounrtyName;
+@property (weak, nonatomic) IBOutlet UILabel *CellUaCapitalName;
+
+
 @end

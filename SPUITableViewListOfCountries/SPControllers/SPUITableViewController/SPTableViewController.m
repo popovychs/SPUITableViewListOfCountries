@@ -7,6 +7,7 @@
 //
 
 #import "SPTableViewController.h"
+#import "SPTableViewCell.h"
 
 @interface SPTableViewController ()
 
@@ -22,6 +23,55 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    ImageFlag = @[@"france.jpg",
+                      @"german.jpg",
+                      @"greatBritn.jpg",
+                      @"greece.jpg",
+                      @"italy.jpg",
+                      @"netherlands.jpg",
+                      @"poland.jpg",
+                      @"romania.jpg",
+                      @"spain.jpg",
+                      @"turkey.jpg",
+                      @"ukraine.jpg"];
+    
+    EnCountryName = @[@"French Republic",
+                          @"Federal Republic of Germany",
+                          @"Great Britain",
+                          @"Greece",
+                          @"Italy",
+                          @"Kingdom of the Netherlands",
+                          @"Poland",
+                          @"Romania",
+                          @"Spain",
+                          @"Republic of Turkey",
+                          @"Ukraine"];
+    
+    UaCounrtyName = @[@"Франція",
+                          @"Німеччина",
+                          @"Великобританія",
+                          @"Греція",
+                          @"Італія",
+                          @"Котолівство Нідерландів",
+                          @"Польща",
+                          @"Румунія",
+                          @"Іспанія",
+                          @"Туреччина",
+                          @"Україна"];
+    
+    UaCapitalName = @[@"Париж",
+                          @"Берлін",
+                          @"Лондон",
+                          @"Афіни",
+                          @"Рим",
+                          @"Амстердам",
+                          @"Варшава",
+                          @"Бухарест",
+                          @"Мадрид",
+                          @"Анкара",
+                          @"Київ"];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,24 +82,27 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return EnCountryName.count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    static NSString *CellIdentefier = @"Cell";
+    SPTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentefier forIndexPath:indexPath];
+    
+    int row = (int)[indexPath row];
+    
+    cell.CellImageFlag.image = [UIImage imageNamed:ImageFlag [row]];
+    cell.CellEnCountryName.text = EnCountryName[row];
+    cell.CellUaCounrtyName.text = UaCounrtyName[row];
+    cell.CellUaCapitalName.text = UaCapitalName[row];
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
