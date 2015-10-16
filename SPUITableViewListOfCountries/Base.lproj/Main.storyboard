@@ -107,11 +107,39 @@
                                 <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Official languages:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dJ8-zH-QNZ">
+                                <rect key="frame" x="20" y="362" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Area total:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FIT-XP-k8G">
+                                <rect key="frame" x="20" y="388" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ktc-7C-7r1">
+                                <rect key="frame" x="20" y="414" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="7FS-RY-Z8B">
                                 <rect key="frame" x="30" y="79" width="260" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" id="iYk-Bf-aOo">
+                                <rect key="frame" x="20" y="440" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -119,8 +147,12 @@
                     <navigationItem key="navigationItem" id="ZMr-9p-wx0"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="DetailAreaTotal" destination="FIT-XP-k8G" id="CXh-fc-LiE"/>
+                        <outlet property="DetailCurrency" destination="iYk-Bf-aOo" id="c28-hP-qzp"/>
                         <outlet property="DetailEnCountryName" destination="5YY-Tm-8BM" id="RDH-G0-lML"/>
                         <outlet property="DetailImageFlag" destination="7FS-RY-Z8B" id="YuL-mE-40a"/>
+                        <outlet property="DetailOfficialLanguage" destination="dJ8-zH-QNZ" id="D63-o9-3ll"/>
+                        <outlet property="DetailPopulation" destination="ktc-7C-7r1" id="bmF-L2-wa1"/>
                         <outlet property="DetailUaCapitalName" destination="QvG-RB-thV" id="7Cs-jP-HHU"/>
                         <outlet property="DetailUaCountryName" destination="ima-ng-BEw" id="fqc-1b-bEE"/>
                     </connections>

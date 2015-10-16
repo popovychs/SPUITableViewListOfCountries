@@ -17,4 +17,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *DetailUaCountryName;
 @property (weak, nonatomic) IBOutlet UILabel *DetailUaCapitalName;
 
+@property (weak, nonatomic) IBOutlet UILabel *DetailOfficialLanguage;
+@property (weak, nonatomic) IBOutlet UILabel *DetailAreaTotal;
+@property (weak, nonatomic) IBOutlet UILabel *DetailPopulation;
+@property (weak, nonatomic) IBOutlet UILabel *DetailCurrency;
+
+
 @end

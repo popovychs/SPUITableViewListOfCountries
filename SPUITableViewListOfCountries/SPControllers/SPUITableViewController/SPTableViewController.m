@@ -38,16 +38,16 @@
                       @"ukraine.jpg"];
     
     EnCountryName = @[@"French Republic",
-                          @"Federal Republic of Germany",
-                          @"Great Britain",
-                          @"Greece",
-                          @"Italy",
-                          @"Kingdom of the Netherlands",
-                          @"Poland",
-                          @"Romania",
-                          @"Spain",
-                          @"Republic of Turkey",
-                          @"Ukraine"];
+                      @"Federal Republic of Germany",
+                      @"Great Britain",
+                      @"Greece",
+                      @"Italy",
+                      @"Kingdom of the Netherlands",
+                      @"Poland",
+                      @"Romania",
+                      @"Spain",
+                      @"Republic of Turkey",
+                      @"Ukraine"];
     
     UaCounrtyName = @[@"Франція",
                           @"Німеччина",
