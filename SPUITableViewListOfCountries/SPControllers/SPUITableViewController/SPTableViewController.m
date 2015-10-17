@@ -9,6 +9,7 @@
 #import "SPTableViewController.h"
 #import "SPTableViewCell.h"
 #import "SPDetailViewController.h"
+#import "SPTableViewHeaderWithImage.h"
 
 @interface SPTableViewController ()
 
@@ -18,12 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     ImageFlag = @[@"france.jpg",
                       @"german.jpg",
@@ -81,6 +76,8 @@
     [[self navigationItem] setBackBarButtonItem:myBarButton];
     
     self.tableView.separatorColor = [UIColor orangeColor];
+    
+    self.tableView.tableHeaderView = [[SPTableViewHeaderWithImage alloc] initWithText:@"Countries of the World"];
     
 }
 

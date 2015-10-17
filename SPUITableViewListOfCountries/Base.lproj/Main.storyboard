@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--Countries-->
+        <!--The List Of Countries-->
         <scene sceneID="g9X-aT-mMK">
             <objects>
                 <tableViewController id="oe8-DT-0Ij" customClass="SPTableViewController" sceneMemberID="viewController">
@@ -68,7 +68,7 @@
                             <outlet property="delegate" destination="oe8-DT-0Ij" id="ICR-e0-j7w"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Countries" id="Vch-7x-jJD"/>
+                    <navigationItem key="navigationItem" title="The List Of Countries" id="Vch-7x-jJD"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xJF-c5-hWQ" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -16,4 +16,8 @@ NSArray *UaCounrtyName;
 NSArray *UaCapitalName;
 }
 
+@property (nonatomic) NSArray *europeanCountries;
+@property (nonatomic) NSArray *asianCountries;
+@property (nonatomic) NSArray *africanCountries;
+
 @end

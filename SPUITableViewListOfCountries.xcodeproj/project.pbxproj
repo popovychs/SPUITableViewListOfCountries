@@ -26,6 +26,8 @@
 		3E6148D31BD16E3A00291F0E /* turkey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E6148C81BD16E3A00291F0E /* turkey.jpg */; settings = {ASSET_TAGS = (); }; };
 		3E6148D41BD16E3A00291F0E /* ukraine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E6148C91BD16E3A00291F0E /* ukraine.jpg */; settings = {ASSET_TAGS = (); }; };
 		3E6148D71BD18DA800291F0E /* SPDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6148D61BD18DA800291F0E /* SPDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		3E9887C91BD2C902002A9649 /* EarthfromSpaceatSunrise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E9887C81BD2C902002A9649 /* EarthfromSpaceatSunrise.jpg */; settings = {ASSET_TAGS = (); }; };
+		3E9887CC1BD2CC23002A9649 /* SPTableViewHeaderWithImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9887CB1BD2CC23002A9649 /* SPTableViewHeaderWithImage.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,9 @@
 		3E6148C91BD16E3A00291F0E /* ukraine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ukraine.jpg; sourceTree = "<group>"; };
 		3E6148D51BD18DA800291F0E /* SPDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPDetailViewController.h; path = SPControllers/SPDetailViewController/SPDetailViewController.h; sourceTree = "<group>"; };
 		3E6148D61BD18DA800291F0E /* SPDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPDetailViewController.m; path = SPControllers/SPDetailViewController/SPDetailViewController.m; sourceTree = "<group>"; };
+		3E9887C81BD2C902002A9649 /* EarthfromSpaceatSunrise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EarthfromSpaceatSunrise.jpg; sourceTree = "<group>"; };
+		3E9887CA1BD2CC23002A9649 /* SPTableViewHeaderWithImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTableViewHeaderWithImage.h; path = SPControllers/SPTableViewHeaderWithImage/SPTableViewHeaderWithImage.h; sourceTree = "<group>"; };
+		3E9887CB1BD2CC23002A9649 /* SPTableViewHeaderWithImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPTableViewHeaderWithImage.m; path = SPControllers/SPTableViewHeaderWithImage/SPTableViewHeaderWithImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +102,7 @@
 		3E61489A1BD1596200291F0E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3E9887C81BD2C902002A9649 /* EarthfromSpaceatSunrise.jpg */,
 				3E6148BE1BD16E3A00291F0E /* flags */,
 				3E6148A61BD1596200291F0E /* Assets.xcassets */,
 				3E6148AB1BD1596200291F0E /* Info.plist */,
@@ -108,6 +114,7 @@
 		3E6148B11BD15A2000291F0E /* SPControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3E9887CD1BD2CC32002A9649 /* SPTableViewHeaderWithImage */,
 				3E6148D81BD18DBE00291F0E /* SPDetailViewController */,
 				3E6148BD1BD16B3400291F0E /* SPTableViewCellController */,
 				3E6148B91BD16A2700291F0E /* SPUITableViewController */,
@@ -186,6 +193,15 @@
 			name = SPDetailViewController;
 			sourceTree = "<group>";
 		};
+		3E9887CD1BD2CC32002A9649 /* SPTableViewHeaderWithImage */ = {
+			isa = PBXGroup;
+			children = (
+				3E9887CA1BD2CC23002A9649 /* SPTableViewHeaderWithImage.h */,
+				3E9887CB1BD2CC23002A9649 /* SPTableViewHeaderWithImage.m */,
+			);
+			name = SPTableViewHeaderWithImage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -256,6 +272,7 @@
 				3E6148CD1BD16E3A00291F0E /* greece.jpg in Resources */,
 				3E6148D41BD16E3A00291F0E /* ukraine.jpg in Resources */,
 				3E6148A51BD1596200291F0E /* Main.storyboard in Resources */,
+				3E9887C91BD2C902002A9649 /* EarthfromSpaceatSunrise.jpg in Resources */,
 				3E6148CC1BD16E3A00291F0E /* greatBritn.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +287,7 @@
 				3E6148D71BD18DA800291F0E /* SPDetailViewController.m in Sources */,
 				3E6148B81BD16A0900291F0E /* SPTableViewController.m in Sources */,
 				3E61489F1BD1596200291F0E /* AppDelegate.m in Sources */,
+				3E9887CC1BD2CC23002A9649 /* SPTableViewHeaderWithImage.m in Sources */,
 				3E61489C1BD1596200291F0E /* main.m in Sources */,
 				3E6148BC1BD16B2300291F0E /* SPTableViewCell.m in Sources */,
 			);
@@ -418,6 +436,7 @@
 				3E6148B01BD1596200291F0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
