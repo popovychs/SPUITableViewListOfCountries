@@ -73,6 +73,15 @@
                           @"Анкара",
                           @"Київ"];
     
+    UIBarButtonItem *myBarButton = [[UIBarButtonItem alloc] initWithTitle:@""
+                                                                    style:UIBarButtonItemStylePlain
+                                                                   target:nil
+                                                                   action:nil];
+    
+    [[self navigationItem] setBackBarButtonItem:myBarButton];
+    
+    self.tableView.separatorColor = [UIColor orangeColor];
+    
 }
 
 - (void)didReceiveMemoryWarning {
